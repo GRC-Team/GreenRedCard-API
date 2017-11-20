@@ -14,7 +14,13 @@ $showjson = "{ cards:[";
                 $poin = $row['Point'];
                 $tanggal = $row['Date'];
                 $guru = $row['Name'];
-               $showjson .= "{\"CardID\":\"$kartu\",\"Student\":\"$siswa\",\"Grade\":\"$kelas\",\"Desc\":\"$desk\",\"Point\":\"$poin\",\"Date\":\"$tanggal\",\"Teacher\":\"$guru\"},"; 
+               $showjson .= "{\"CardID\":\"$kartu\",
+               \"Student\":\"$siswa\",
+               \"Grade\":\"$kelas\",
+               \"Desc\":\"$desk\",
+               \"Point\":\"$poin\",
+               \"Date\":\"$tanggal\",
+               \"Teacher\":\"$guru\"},"; 
            }
 $showjson = substr($showjson,0,strlen($showjson)-1);
 $showjson.="]}";
